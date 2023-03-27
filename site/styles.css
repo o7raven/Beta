@@ -1,0 +1,101 @@
+body{
+    background-color: #141414;
+    color: #106b70;
+}
+
+.main_container{
+    width: 100%;
+    height: 100vh;
+}
+.header{
+    font-size: 5vh;
+    text-align: center;
+    padding: 1rem;
+}
+.grid{
+    height: 50%;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+}
+
+.translator{
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    justify-content: center;
+    width: 40%;
+    padding: 1rem;
+}
+.inputText{
+    color: #38a48c;
+    font-family: inherit;
+    font-size: 3vh;
+    margin: 1rem;
+    padding: 0.1em 0.5em;
+    background-color: #141414;
+    border: 2px solid #106b70;
+    border-style:dashed;
+    border-radius: 2.5px;
+    transition: 0.1s ease;
+}
+
+.inputText:focus{
+    border: 2px solid #c6c8ff;
+    border-style:dashed;
+    outline:none;
+}
+
+.btnSubmit{
+    margin: 1rem;
+    color: #38a48c;
+    font-family: inherit;
+    font-size: 3vh;
+    padding: 0.25em 0.5em;
+    background-color: #141414;
+    border: 2px solid #106b70;
+    border-style:groove;
+    border-radius: 2.5px;
+    transition: 0.1s ease;
+
+}
+.btnSubmit:active{
+    border: 2px solid #c6c8ff;
+    background-color: #121212;
+}
+
+.btnSubmit:hover{
+    color: #87e6d2;
+}
+
+.translated{
+    display: grid;
+    justify-items: center;
+}
+
+.translated_header{
+    font-size: 6vh;
+    text-align: center;
+}
+
+#translatedText{
+    color: #38a48c;
+    width: 90vw;
+    background-color: transparent;
+    resize: none;
+    border: whitesmoke solid 1px;
+    border-radius: 4px;
+    font-size: 3vw;
+    padding: 1rem;
+    
+}
+
+@media screen and (max-width: 800px) {
+    .translator{
+        grid-template-columns: 1fr;
+    }
+    #translatedText{
+        
+    font-size: 6vw;
+    }
+}
